@@ -1,0 +1,8 @@
+#compile
+dtc spidev_disabler.dts -O dtb >spidev_disabler.dtbo
+
+#load
+sudo dtoverlay -d . spidev_disabler
+
+
+
